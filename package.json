@@ -1,0 +1,28 @@
+{
+  "name": "webpack-portfolio-web",
+  "version": "1.0.0",
+  "description": "This is a portfolio 💼 web project for show the professionals' information. The goal of this project is understand how use the webpack 📦.",
+  "main": "index.js",
+  "scripts": {
+    "webpack:prod": "npx webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zearkiatos/webpack-portfolio-web.git"
+  },
+  "keywords": [],
+  "author": "Pedro Capriles <caprilespe@outlook.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zearkiatos/webpack-portfolio-web/issues"
+  },
+  "homepage": "https://github.com/zearkiatos/webpack-portfolio-web#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
