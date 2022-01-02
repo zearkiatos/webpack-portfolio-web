@@ -1,7 +1,5 @@
-require('dotenv').config();
-
 const config = {
-    NODE_ENV: process.env.NODE_ENV,
+    ENVIRONMENT: process.env.ENVIRONMENT,
     RANDOMUSER_API_BASE_URL: process.env.RANDOMUSER_API_BASE_URL
 
 };
