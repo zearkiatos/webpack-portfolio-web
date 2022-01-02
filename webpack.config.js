@@ -1,6 +1,7 @@
 const path = require("path");
 const Dotenv = require("dotenv-webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -11,11 +12,15 @@ module.exports = {
   resolve: {
     extensions: [".js"]
   },
-  plugins: [new Dotenv(), new HtmlWebpackPlugin({
-    inject: true,
-    template: './public/index.html',
-    fileName: './index.html'
-  })],
+  plugins: [
+    new Dotenv(),
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: "./public/index.html",
+      fileName: "./index.html"
+    }),
+    new MiniCssExtractPlugin()
+  ],
   module: {
     rules: [
       {
@@ -24,6 +29,10 @@ module.exports = {
         use: {
           loader: "babel-loader"
         }
+      },
+      {
+        test: /\.css|.styl$/i,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "stylus-loader"]
       }
     ]
   }
