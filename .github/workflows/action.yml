@@ -34,7 +34,7 @@ jobs:
     - name: Build docker 🐳
       run: docker build . -t=webpack-portfolio-web:ghb-$GITHUB_RUN_NUMBER
     - name: Build
-      run: npm run webpack:build
+      run: npm run webpack:prod
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v2
       with:
