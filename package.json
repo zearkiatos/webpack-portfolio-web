@@ -1,4 +1,5 @@
 {
+  "homepage": ".",
   "name": "webpack-portfolio-web",
   "version": "1.0.0",
   "description": "This is a portfolio 💼 web project for show the professionals' information. The goal of this project is understand how use the webpack 📦.",
@@ -19,7 +20,6 @@
   "bugs": {
     "url": "https://github.com/zearkiatos/webpack-portfolio-web/issues"
   },
-  "homepage": "https://github.com/zearkiatos/webpack-portfolio-web#readme",
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "@babel/plugin-transform-runtime": "^7.16.7",

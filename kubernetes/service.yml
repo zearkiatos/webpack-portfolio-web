@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2022-01-03T00:08:04Z"
+  labels:
+    app: webpack-portfolio-web
+  name: webpack-portfolio-web
+  namespace: default
+  resourceVersion: "618"
+  uid: 698b4de8-98b4-477b-b12a-7d153257b29e
+spec:
+  allocateLoadBalancerNodePorts: true
+  clusterIP: 10.107.19.99
+  clusterIPs:
+  - 10.107.19.99
+  externalTrafficPolicy: Cluster
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - nodePort: 31509
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: webpack-portfolio-web
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer: {}
