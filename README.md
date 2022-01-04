@@ -8,4 +8,4 @@ This is a portfolio 💼 web project for show the professionals' information. Th
 
 Github: [https://zearkiatos.github.io/webpack-portfolio-web/](https://zearkiatos.github.io/webpack-portfolio-web/)
 
-Gitlab 🦊: [https://caprilespe.gitlab.io/webpack-portfolio-web//](https://caprilespe.gitlab.io/webpack-portfolio-web/)
+Gitlab 🦊: [https://caprilespe.gitlab.io/webpack-portfolio-web/](https://caprilespe.gitlab.io/webpack-portfolio-web/)

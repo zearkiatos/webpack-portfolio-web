@@ -34,10 +34,6 @@ build-docker:
   script:
     - echo "Build docker 🐳"
     - docker build . -t=webpack-portfolio-web:glb-${CI_PIPELINE_IID}
-  artifacts:
-    expire_in: 1hr
-    paths:
-      - build
 
 build-app:
   stage: build
@@ -57,7 +53,7 @@ build-app:
   artifacts:
     expire_in: 1hr
     paths:
-      - build
+      - dist
 
 pages:
   stage: deploy
