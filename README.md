@@ -11,3 +11,5 @@ Github: [https://zearkiatos.github.io/webpack-portfolio-web/](https://zearkiatos
 Gitlab 🦊: [https://caprilespe.gitlab.io/webpack-portfolio-web/](https://caprilespe.gitlab.io/webpack-portfolio-web/)
 
 Firebase 🔥: [https://webpack-portfolio-web.web.app/](https://webpack-portfolio-web.web.app/)
+
+Vercel 🔥: [https://webpack-portfolio-web.vercel.app/](https://webpack-portfolio-web.vercel.app/)

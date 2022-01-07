@@ -1,4 +1,4 @@
-import config from '../config/index.js';
+import config from '@config/index.js';
 const API = config.RANDOMUSER_API_BASE_URL;
 
 const getData = async (id) => {
