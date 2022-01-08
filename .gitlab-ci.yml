@@ -57,7 +57,7 @@ build-app:
     - echo "CUSTOM_DATA_TWITTER=${CUSTOM_DATA_TWITTER}" >> .env
     - echo "CUSTOM_DATA_GITHUB=${CUSTOM_DATA_GITHUB}" >> .env
     - echo "CUSTOM_DATA_INSTAGRAM=${CUSTOM_DATA_INSTAGRAM}" >> .env
-    - npm run webpack:prod
+    - npm run build
   artifacts:
     expire_in: 1hr
     paths:
