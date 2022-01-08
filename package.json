@@ -12,7 +12,8 @@
     "prefirebase:deploy": "npm run webpack:prod",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run webpack:prod",
-    "dev": "npm run webpack:dev"
+    "dev": "npm run webpack:dev",
+    "deploy:netlify": "node ./scripts/create-env.js && npm run build"
   },
   "repository": {
     "type": "git",
