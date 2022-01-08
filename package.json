@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "webpack:prod": "npx webpack --mode production --config webpack.config.js",
-    "webpack:dev": "npx webpack --mode development --config webpack.config.dev.js",
+    "webpack:dev": "npx webpack --mode development --config webpack.config.dev.js --watch",
     "docker:build": "docker-compose up --build",
     "firebase:deploy": "firebase deploy",
     "prefirebase:deploy": "npm run webpack:prod",
