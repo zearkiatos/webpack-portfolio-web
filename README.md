@@ -12,4 +12,9 @@ Gitlab 🦊: [https://caprilespe.gitlab.io/webpack-portfolio-web/](https://capri
 
 Firebase 🔥: [https://webpack-portfolio-web.web.app/](https://webpack-portfolio-web.web.app/)
 
-Vercel 🔥: [https://webpack-portfolio-web.vercel.app/](https://webpack-portfolio-web.vercel.app/)
+Vercel: [https://webpack-portfolio-web.vercel.app/](https://webpack-portfolio-web.vercel.app/)
+
+Netlify: [https://webpack-portfolio-web.netlify.app/](https://webpack-portfolio-web.netlify.app/)
+
+
+

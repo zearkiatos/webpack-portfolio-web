@@ -56,7 +56,7 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader", "stylus-loader"]
       },
       {
-        test: /\.png/,
+        test: /\.(png|jpg)$/,
         type: "asset/resource"
       },
       {

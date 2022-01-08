@@ -28,9 +28,25 @@ jobs:
         touch .env &&
         echo "ENVIRONMENT=${ENVIRONMENT}" > .env
         echo "RANDOMUSER_API_BASE_URL=${RANDOMUSER_API_BASE_URL}" >> .env
+        echo "CUSTOM_DATA=${CUSTOM_DATA}" >> .env
+        echo "CUSTOM_DATA_NAME=${CUSTOM_DATA_NAME}" >> .env
+        echo "CUSTOM_DATA_LASTNAME=${CUSTOM_DATA_LASTNAME}" >> .env
+        echo "CUSTOM_DATA_EMAIL=${CUSTOM_DATA_EMAIL}" >> .env
+        echo "CUSTOM_DATA_COUNTRY=${CUSTOM_DATA_COUNTRY}" >> .env
+        echo "CUSTOM_DATA_TWITTER=${CUSTOM_DATA_TWITTER}" >> .env
+        echo "CUSTOM_DATA_GITHUB=${CUSTOM_DATA_GITHUB}" >> .env
+        echo "CUSTOM_DATA_INSTAGRAM=${CUSTOM_DATA_INSTAGRAM}" >> .env
       env:
         ENVIRONMENT: ${{ secrets.ENVIRONMENT }}
         RANDOMUSER_API_BASE_URL: ${{ secrets.RANDOMUSER_API_BASE_URL }}
+        CUSTOM_DATA: ${{ secrets.CUSTOM_DATA }}
+        CUSTOM_DATA_NAME: ${{ secrets.CUSTOM_DATA_NAME }}
+        CUSTOM_DATA_LASTNAME: ${{ secrets.CUSTOM_DATA_LASTNAME }}
+        CUSTOM_DATA_EMAIL: ${{ secrets.CUSTOM_DATA_EMAIL }}
+        CUSTOM_DATA_COUNTRY: ${{ secrets.CUSTOM_DATA_COUNTRY }}
+        CUSTOM_DATA_TWITTER: ${{ secrets.CUSTOM_DATA_TWITTER }}
+        CUSTOM_DATA_GITHUB: ${{ secrets.CUSTOM_DATA_GITHUB }}
+        CUSTOM_DATA_INSTAGRAM: ${{ secrets.CUSTOM_DATA_INSTAGRAM }}
     - name: Build docker 🐳
       run: docker build . -t=webpack-portfolio-web:ghb-$GITHUB_RUN_NUMBER
     - name: Build
