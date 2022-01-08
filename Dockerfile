@@ -7,7 +7,7 @@ RUN npm install
 ENV PATH="./node_modules/.bin:$PATH"
 
 COPY . ./
-RUN npm run webpack:prod
+RUN npm run build
 
 FROM nginx:1.17-alpine
 RUN apk --no-cache add curl

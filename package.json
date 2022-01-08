@@ -6,11 +6,13 @@
   "main": "index.js",
   "scripts": {
     "webpack:prod": "npx webpack --mode production --config webpack.config.js",
-    "webpack:dev": "npx webpack --mode development",
+    "webpack:dev": "npx webpack --mode development --config webpack.config.dev.js",
     "docker:build": "docker-compose up --build",
     "firebase:deploy": "firebase deploy",
     "prefirebase:deploy": "npm run webpack:prod",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run webpack:prod",
+    "dev": "npm run webpack:dev" 
   },
   "repository": {
     "type": "git",
