@@ -14,7 +14,9 @@
     "build": "npm run webpack:prod",
     "dev": "npm run webpack:dev",
     "deploy": "node ./scripts/create-env.js && npm run build",
-    "start:dev": "npx webpack server --config webpack.config.dev.js"
+    "start:dev": "npx webpack server --config webpack.config.dev.js",
+    "analyzer": "npx webpack --profile --json > stats.json",
+    "analyzer:report": "webpack-bundle-analyzer stats.json"
   },
   "repository": {
     "type": "git",
@@ -44,6 +46,7 @@
     "terser-webpack-plugin": "^5.3.0",
     "url-loader": "^4.1.1",
     "webpack": "^5.65.0",
+    "webpack-bundle-analyzer": "^4.5.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.7.2"
   },
